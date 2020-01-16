@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23CBCB0223D0A96600525E5D /* EchoPulseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBCAF123D0A96600525E5D /* EchoPulseViewController.swift */; };
+		23CBCB0323D0A96600525E5D /* EchoPulseLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBCAF223D0A96600525E5D /* EchoPulseLayer.swift */; };
+		23CBCB0423D0A96600525E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23CBCAF423D0A96600525E5D /* Assets.xcassets */; };
+		23CBCB0523D0A96600525E5D /* EchoPulseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBCAF523D0A96600525E5D /* EchoPulseView.swift */; };
+		23CBCB0623D0A96600525E5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CBCAF623D0A96600525E5D /* Main.storyboard */; };
+		23CBCB0723D0A96600525E5D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBCAF923D0A96600525E5D /* UIColor+Extensions.swift */; };
+		23CBCB0823D0A96600525E5D /* CAAnimation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBCAFB23D0A96600525E5D /* CAAnimation+Extension.swift */; };
+		23CBCB0923D0A96600525E5D /* CAAnimation+PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBCAFC23D0A96600525E5D /* CAAnimation+PulseAnimation.swift */; };
+		23CBCB0A23D0A96600525E5D /* CAShapeLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBCAFD23D0A96600525E5D /* CAShapeLayer+Extension.swift */; };
+		23CBCB0B23D0A96600525E5D /* CAGradientLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBCAFE23D0A96600525E5D /* CAGradientLayer+Extension.swift */; };
+		23CBCB0C23D0A96600525E5D /* EchoPulseGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBCAFF23D0A96600525E5D /* EchoPulseGradientLayer.swift */; };
+		23CBCB0D23D0A96600525E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBCB0023D0A96600525E5D /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		235C709623D0027E006A20C1 /* walter2animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = walter2animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23CBCAF123D0A96600525E5D /* EchoPulseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EchoPulseViewController.swift; sourceTree = "<group>"; };
+		23CBCAF223D0A96600525E5D /* EchoPulseLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EchoPulseLayer.swift; sourceTree = "<group>"; };
+		23CBCAF323D0A96600525E5D /* walter2animations.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = walter2animations.entitlements; sourceTree = "<group>"; };
+		23CBCAF423D0A96600525E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23CBCAF523D0A96600525E5D /* EchoPulseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EchoPulseView.swift; sourceTree = "<group>"; };
+		23CBCAF723D0A96600525E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23CBCAF923D0A96600525E5D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		23CBCAFB23D0A96600525E5D /* CAAnimation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAAnimation+Extension.swift"; sourceTree = "<group>"; };
+		23CBCAFC23D0A96600525E5D /* CAAnimation+PulseAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAAnimation+PulseAnimation.swift"; sourceTree = "<group>"; };
+		23CBCAFD23D0A96600525E5D /* CAShapeLayer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+Extension.swift"; sourceTree = "<group>"; };
+		23CBCAFE23D0A96600525E5D /* CAGradientLayer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Extension.swift"; sourceTree = "<group>"; };
+		23CBCAFF23D0A96600525E5D /* EchoPulseGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EchoPulseGradientLayer.swift; sourceTree = "<group>"; };
+		23CBCB0023D0A96600525E5D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23CBCB0F23D0AA3300525E5D /* walter2animationsInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = walter2animationsInfo.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		235C709323D0027E006A20C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		235C708D23D0027E006A20C1 = {
+			isa = PBXGroup;
+			children = (
+				23CBCAF023D0A96600525E5D /* walter2animations */,
+				235C709723D0027E006A20C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		235C709723D0027E006A20C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				235C709623D0027E006A20C1 /* walter2animations.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23CBCAF023D0A96600525E5D /* walter2animations */ = {
+			isa = PBXGroup;
+			children = (
+				23CBCB1323D0AAD100525E5D /* Resources */,
+				23CBCB1223D0AACA00525E5D /* Classes */,
+			);
+			path = walter2animations;
+			sourceTree = "<group>";
+		};
+		23CBCAF823D0A96600525E5D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23CBCAF923D0A96600525E5D /* UIColor+Extensions.swift */,
+				23CBCAFA23D0A96600525E5D /* CAAnimation */,
+				23CBCAFD23D0A96600525E5D /* CAShapeLayer+Extension.swift */,
+				23CBCAFE23D0A96600525E5D /* CAGradientLayer+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		23CBCAFA23D0A96600525E5D /* CAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				23CBCAFB23D0A96600525E5D /* CAAnimation+Extension.swift */,
+				23CBCAFC23D0A96600525E5D /* CAAnimation+PulseAnimation.swift */,
+			);
+			path = CAAnimation;
+			sourceTree = "<group>";
+		};
+		23CBCB1123D0AABE00525E5D /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				23CBCAFF23D0A96600525E5D /* EchoPulseGradientLayer.swift */,
+				23CBCAF223D0A96600525E5D /* EchoPulseLayer.swift */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		23CBCB1223D0AACA00525E5D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				23CBCB1523D0AAF100525E5D /* General */,
+				23CBCB1423D0AAEA00525E5D /* Views */,
+				23CBCB1123D0AABE00525E5D /* Layers */,
+				23CBCAF823D0A96600525E5D /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		23CBCB1323D0AAD100525E5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				23CBCB0F23D0AA3300525E5D /* walter2animationsInfo.plist */,
+				23CBCAF323D0A96600525E5D /* walter2animations.entitlements */,
+				23CBCAF423D0A96600525E5D /* Assets.xcassets */,
+				23CBCAF623D0A96600525E5D /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		23CBCB1423D0AAEA00525E5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23CBCAF523D0A96600525E5D /* EchoPulseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23CBCB1523D0AAF100525E5D /* General */ = {
+			isa = PBXGroup;
+			children = (
+				23CBCB0023D0A96600525E5D /* AppDelegate.swift */,
+				23CBCAF123D0A96600525E5D /* EchoPulseViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		235C709523D0027E006A20C1 /* walter2animations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235C70A623D00280006A20C1 /* Build configuration list for PBXNativeTarget "walter2animations" */;
+			buildPhases = (
+				235C709223D0027E006A20C1 /* Sources */,
+				235C709323D0027E006A20C1 /* Frameworks */,
+				235C709423D0027E006A20C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = walter2animations;
+			productName = nnnnnnnn;
+			productReference = 235C709623D0027E006A20C1 /* walter2animations.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		235C708E23D0027E006A20C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Kostiantyn Girych";
+				TargetAttributes = {
+					235C709523D0027E006A20C1 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 235C709123D0027E006A20C1 /* Build configuration list for PBXProject "walter2animations" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 235C708D23D0027E006A20C1;
+			productRefGroup = 235C709723D0027E006A20C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				235C709523D0027E006A20C1 /* walter2animations */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		235C709423D0027E006A20C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23CBCB0423D0A96600525E5D /* Assets.xcassets in Resources */,
+				23CBCB0623D0A96600525E5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		235C709223D0027E006A20C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23CBCB0323D0A96600525E5D /* EchoPulseLayer.swift in Sources */,
+				23CBCB0B23D0A96600525E5D /* CAGradientLayer+Extension.swift in Sources */,
+				23CBCB0523D0A96600525E5D /* EchoPulseView.swift in Sources */,
+				23CBCB0223D0A96600525E5D /* EchoPulseViewController.swift in Sources */,
+				23CBCB0C23D0A96600525E5D /* EchoPulseGradientLayer.swift in Sources */,
+				23CBCB0723D0A96600525E5D /* UIColor+Extensions.swift in Sources */,
+				23CBCB0923D0A96600525E5D /* CAAnimation+PulseAnimation.swift in Sources */,
+				23CBCB0A23D0A96600525E5D /* CAShapeLayer+Extension.swift in Sources */,
+				23CBCB0D23D0A96600525E5D /* AppDelegate.swift in Sources */,
+				23CBCB0823D0A96600525E5D /* CAAnimation+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		23CBCAF623D0A96600525E5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23CBCAF723D0A96600525E5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		235C70A423D00280006A20C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		235C70A523D00280006A20C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		235C70A723D00280006A20C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = walter2animations/Resources/walter2animations.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K9924RQA59;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = walter2animations/Resources/walter2animationsInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcyrig.walter2animations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		235C70A823D00280006A20C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = walter2animations/Resources/walter2animations.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K9924RQA59;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = walter2animations/Resources/walter2animationsInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcyrig.walter2animations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		235C709123D0027E006A20C1 /* Build configuration list for PBXProject "walter2animations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235C70A423D00280006A20C1 /* Debug */,
+				235C70A523D00280006A20C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		235C70A623D00280006A20C1 /* Build configuration list for PBXNativeTarget "walter2animations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235C70A723D00280006A20C1 /* Debug */,
+				235C70A823D00280006A20C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 235C708E23D0027E006A20C1 /* Project object */;
+}

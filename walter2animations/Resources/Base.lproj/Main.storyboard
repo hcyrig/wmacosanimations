@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="walter2animations" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="walter2animations" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About walter2animations" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide walter2animations" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit walter2animations" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="walter2animations" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="WALTR 2" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="814" height="814"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="538"/>
+        </scene>
+        <!--Echo Pulse View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController storyboardIdentifier="EchoPulseViewController" id="XfG-lQ-9wD" customClass="EchoPulseViewController" customModule="walter2animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YS0-2X-T7B">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1024"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1024" id="dd8-Ds-y0f"/>
+                                    <constraint firstAttribute="width" constant="1024" id="eeK-vM-i8q"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="sierra" id="JQt-pV-k7C"/>
+                            </imageView>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dhY-Fr-Pww">
+                                <rect key="frame" x="98" y="98" width="256" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" segmentDistribution="fillEqually" style="rounded" trackingMode="selectOne" id="AlV-US-ipp">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment label="Still" selected="YES"/>
+                                        <segment label="Inbound" width="83" tag="1"/>
+                                        <segment label="Outbound" width="83"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="changeStateControlWithControl:" target="XfG-lQ-9wD" id="79H-xP-2gy"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rGQ-0x-j0Z">
+                                <rect key="frame" x="710" y="98" width="216" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" segmentDistribution="fillEqually" style="rounded" trackingMode="selectOne" id="5aU-IF-5rt">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment label="Search mode" selected="YES"/>
+                                        <segment label="Device mode" tag="1"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="changeModeControlWithControl:" target="XfG-lQ-9wD" id="3kn-25-ahQ"/>
+                                </connections>
+                            </segmentedControl>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Kcn-1W-HmO">
+                                <rect key="frame" x="212" y="312" width="600" height="400"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="5ar-dd-dS7" customClass="EchoPulseView" customModule="walter2animations" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="GXV-ig-uy1"/>
+                                            <constraint firstAttribute="width" constant="600" id="PUa-VT-AiV"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="GiD-qP-jXN"/>
+                                    <constraint firstAttribute="width" constant="600" id="pha-5n-BpB"/>
+                                    <constraint firstItem="5ar-dd-dS7" firstAttribute="centerX" secondItem="Kcn-1W-HmO" secondAttribute="centerX" id="v1b-Nj-CcV"/>
+                                    <constraint firstItem="5ar-dd-dS7" firstAttribute="centerY" secondItem="Kcn-1W-HmO" secondAttribute="centerY" id="yJG-Oe-pPA"/>
+                                </constraints>
+                                <backgroundFilters>
+                                    <ciFilter name="CIGaussianBlur">
+                                        <configuration>
+                                            <null key="inputImage"/>
+                                            <real key="inputRadius" value="10"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </backgroundFilters>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YS0-2X-T7B" secondAttribute="trailing" id="1ue-TI-HwD"/>
+                            <constraint firstAttribute="trailing" secondItem="rGQ-0x-j0Z" secondAttribute="trailing" constant="100" id="Kmg-4D-vH5"/>
+                            <constraint firstAttribute="bottom" secondItem="dhY-Fr-Pww" secondAttribute="bottom" constant="100" id="RbA-sn-M4U"/>
+                            <constraint firstAttribute="bottom" secondItem="YS0-2X-T7B" secondAttribute="bottom" id="Srd-bT-6NZ"/>
+                            <constraint firstItem="YS0-2X-T7B" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="UkR-kv-RCZ"/>
+                            <constraint firstItem="YS0-2X-T7B" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="W57-Ob-wO4"/>
+                            <constraint firstItem="Kcn-1W-HmO" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="aS6-fJ-bbZ"/>
+                            <constraint firstAttribute="bottom" secondItem="rGQ-0x-j0Z" secondAttribute="bottom" constant="100" id="jZc-k7-762"/>
+                            <constraint firstItem="Kcn-1W-HmO" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="kCT-jk-2uY"/>
+                            <constraint firstItem="dhY-Fr-Pww" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="100" id="tTL-yT-iio"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="echoView" destination="5ar-dd-dS7" id="tsi-MM-SXj"/>
+                        <outlet property="modeSegmentControl" destination="rGQ-0x-j0Z" id="kYl-Pi-pSy"/>
+                        <outlet property="stateSegmentControl" destination="dhY-Fr-Pww" id="ldq-6U-P7f"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="1756"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sierra" width="5120" height="3200"/>
+    </resources>
+</document>
