@@ -11,9 +11,7 @@ import Cocoa
 extension CAShapeLayer {
   
   struct ShapeConfiguration {
-    
-    var position: CGPoint
-    var radius: CGFloat
+
     var lineWidth: CGFloat = 1.0
   }
   

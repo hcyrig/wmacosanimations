@@ -16,16 +16,31 @@ extension CAAnimation {
       
       static let opacity = "opacity"
       static let scale = "transform.scale"
+      static let translate = "transform.translation.y"
     }
   }
   
-  static func pulse(scale: Float,
-                    opacity: Float,
+  static func focus(scale: CAAnimation.AnimationRange,
+                    translate: CAAnimation.AnimationRange,
+                    duration: TimeInterval,
+                    beginTime: TimeInterval) -> CAAnimation {
+    
+    return focus(
+      scale: scale,
+      translate: translate,
+      configuration: .init(duration: duration,
+                           beginTime: beginTime,
+                           isRemovedOnCompletion: false,
+                           fillMode: .forwards))
+  }
+  
+  static func pulse(scale: CAAnimation.AnimationRange,
+                    opacity: CAAnimation.AnimationRange,
                     duration: TimeInterval,
                     beginTime: TimeInterval) -> CAAnimation {
     return pulse(
-      scales: pulseScalesTiming(duration: duration, value: scale),
-      opacities: pulseOpacitiesTiming(duration: duration, value: opacity),
+      scales: pulseScalesTiming(scale: scale),
+      opacities: pulseOpacitiesTiming(opacity: opacity),
       configuration: .init(duration: duration,
                            beginTime: beginTime))
   }
@@ -41,21 +56,29 @@ extension CAAnimation {
     return .group([opacity, scale], configuration: configuration)
   }
   
-  private static func pulseOpacitiesTiming(duration: TimeInterval,
-                                           value: Float) -> [Value] {
-    return [
-      (0 / duration, value),
-      (0.1 / duration, 1.0),
-      (0.2 / duration, value),
-      (1 / duration, value)]
+  private static func focus(scale: CAAnimation.AnimationRange,
+                     translate: CAAnimation.AnimationRange,
+                     configuration: AnimationConfiguration) -> CAAnimation  {
+    
+    let scale = animation(for: Constants.AnimationKeys.scale, range: scale)
+    let translate = animation(for: Constants.AnimationKeys.translate, range: translate)
+    
+    return .group([translate, scale], configuration: configuration)
   }
   
-  private static func pulseScalesTiming(duration: TimeInterval,
-                                        value: Float) -> [Value] {
+  private static func pulseOpacitiesTiming(opacity: CAAnimation.AnimationRange) -> [Value] {
     return [
-      (0 / duration, 1.0),
-      (0.1 / duration, value),
-      (0.2 / duration, 1),
-      (1 / duration, 1)]
+      (0 / 1.0, opacity.from),
+      (0.1 / 1.0, opacity.to),
+      (0.2 / 1.0, opacity.from),
+      (1 / 1.0, opacity.from)]
+  }
+  
+  private static func pulseScalesTiming(scale: CAAnimation.AnimationRange) -> [Value] {
+    return [
+      (0 / 1.0, scale.from),
+      (0.1 / 1.0, scale.to),
+      (0.2 / 1.0, scale.from),
+      (1 / 1.0, scale.from)]
   }
 }

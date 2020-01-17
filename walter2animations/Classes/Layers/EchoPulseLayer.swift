@@ -52,9 +52,8 @@ final class EchoPulseLayer {
       startPoint: auxCalculations.gradientOffset.startPosition,
       endPoint: auxCalculations.gradientOffset.endPosition,
       opacity: Float(auxCalculations.gradientOpacity))
-    let gradientLayer = EchoPulseGradientLayer.layer(frame: frame,
-                                                     configuration: gradientConfiguration)
-    return gradientLayer
+    return EchoPulseGradientLayer.layer(frame: frame,
+                                        configuration: gradientConfiguration)
   }
   
   static private func calculateAuxes(shparePosition: Int,
@@ -72,14 +71,17 @@ final class EchoPulseLayer {
   static private func createShapeLayer(frame: CGRect,
                                        radius: CGFloat) -> CAShapeLayer {
     
-    let shapeConfiguration = CAShapeLayer.ShapeConfiguration(
-      position: CGPoint(x: frame.midX, y: frame.midY),
-      radius: radius)
+    let shapeConfiguration = CAShapeLayer.ShapeConfiguration()
     let echoShapeLayer = CAShapeLayer.roundLayer(configuration: shapeConfiguration)
+    
     let rectr = CGRect(origin: .zero, size: CGSize(width: radius * 2, height: radius * 2))
     echoShapeLayer.path = CGPath(roundedRect: rectr, cornerWidth: rectr.width / 2, cornerHeight: rectr.height / 2, transform: nil)
     echoShapeLayer.position = CGPoint(x: frame.midX - radius, y: frame.midY - radius)
    
     return echoShapeLayer
+  }
+  
+  func removeAnimations(key: String) {
+    layers.forEach({ $0.layer.removeAnimation(forKey: key) })
   }
 }

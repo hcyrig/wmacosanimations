@@ -10,7 +10,7 @@ import Cocoa
 
 extension CAAnimation {
   
-  typealias AnimationRange = (from: Any?, to: Any?)
+  typealias AnimationRange = (from: CGFloat, to: CGFloat)
   typealias Value = (timing: TimeInterval, value: Any)
   
   struct AnimationConfiguration {
@@ -20,6 +20,7 @@ extension CAAnimation {
     var repeatCount: Float = 1
     var autoreverses = false
     var isRemovedOnCompletion = true
+    var fillMode = CAMediaTimingFillMode.removed
     var type: CAMediaTimingFunctionName = .default
   }
   
@@ -28,6 +29,7 @@ extension CAAnimation {
     duration = configuration.duration
     beginTime = configuration.beginTime
     isRemovedOnCompletion = configuration.isRemovedOnCompletion
+    fillMode = configuration.fillMode
     autoreverses = configuration.autoreverses
     repeatCount = configuration.repeatCount
     timingFunction = CAMediaTimingFunction(name: configuration.type)
